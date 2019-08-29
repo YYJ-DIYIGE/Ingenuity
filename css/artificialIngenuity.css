@@ -261,6 +261,7 @@
     background: url(../image/btn-block.png) no-repeat center;
     border: none;
     resize: none;
+    outline: none;
   }
   .wishes-search::placeholder{
     color: #D9D9D9;
@@ -302,7 +303,7 @@
     height: 46px;
     background: url(../image/decorate.png) no-repeat center;
   }
-  .whshes-scrip.show .scrip-close{
+   .whshes-scrip.show .scrip-close{
     position: absolute;
     top: -20px;
     right: 0;
