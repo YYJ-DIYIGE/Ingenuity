@@ -57,6 +57,10 @@
       e.preventDefault();
       let whshesscrip = e.target;
       $(whshesscrip).addClass('show').siblings().removeClass('show');
+      let isLock = e.target.className.indexOf('scrip-close') !== -1;
+      if (isLock) {
+        return
+      }
       whshesscrip.style.zIndex = ++ PAGE.data.zIndex;
       PAGE.data.scrip = whshesscrip;
       PAGE.data.scripTop = whshesscrip.offsetTop;
